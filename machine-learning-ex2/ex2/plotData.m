@@ -11,9 +11,11 @@ figure; hold on;
 %               2D plot, using the option 'k+' for the positive
 %               examples and 'ko' for the negative examples.
 %
-
-
-
+pos=find(y==1); % to find the indices of positive class
+neg=find(y==0) ;% to find the indices of negative class
+plot(X(pos,1),X(pos,2),'k+'); %+ is in blue , while k+ is in black
+hold on;
+plot(X(neg,1),X(neg,2),'ko','MarkerFaceColor','y') ;
 
 
 
